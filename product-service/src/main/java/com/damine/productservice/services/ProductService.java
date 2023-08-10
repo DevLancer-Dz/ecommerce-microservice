@@ -5,6 +5,8 @@ import com.damine.productservice.exceptions.ResourceNotFoundException;
 import com.damine.productservice.mapper.ProductMapper;
 import com.damine.productservice.repositories.ProductRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
@@ -40,5 +42,10 @@ public class ProductService implements DAO<ProductDto, Long> {
     @Override
     public Collection<ProductDto> findAll() {
         return productMapper.to(productRepository.findAll());
+    }
+
+    @Override
+    public Page<ProductDto> findAll(Pageable pageable) {
+        return productMapper.to(productRepository.findAll(pageable));
     }
 }
