@@ -26,6 +26,9 @@ public class AbstractEntity<ID extends Serializable> implements Serializable {
     @Column(name = "UPDATED_AT")
     private Date updatedAt;
 
-
+    @PrePersist
+    protected void onCreate() {
+        createdAt = new Date();
+    }
 
 }
