@@ -4,61 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b3019f5-df67-423c-a170-aa749b6cb0c0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/de17488d-6f1e-4112-b873-127412bc7503.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/de17488d-6f1e-4112-b873-127412bc7503/storage_v2/_src_/database/productdb.rVlOwQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/de17488d-6f1e-4112-b873-127412bc7503/storage_v2/_src_/database/productdb.rVlOwQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/de17488d-6f1e-4112-b873-127412bc7503/storage_v2/_src_/database/productdb.rVlOwQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/de17488d-6f1e-4112-b873-127412bc7503/storage_v2/_src_/database/productdb.rVlOwQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/damine/apigateway/ApiGatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/damine/apigateway/ApiGatewayApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/example/eurekaserver/EurekaServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/test/java/com/example/eurekaserver/EurekaServerApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/damine/productservice/DTO/AbstractDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/damine/productservice/DTO/ProductDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/damine/productservice/ProductServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/damine/productservice/controllers/AbstractController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/damine/productservice/controllers/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/damine/productservice/exceptions/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/damine/productservice/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/damine/productservice/mapper/AbstractMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/damine/productservice/mapper/ProductMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/damine/productservice/models/AbstractEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/damine/productservice/models/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/damine/productservice/repositories/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/damine/productservice/services/DAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/damine/productservice/services/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/test/java/com/damine/productservice/ProductServiceApplicationTests.java" afterDir="false" />
+    <list default="true" id="6b3019f5-df67-423c-a170-aa749b6cb0c0" name="Changes" comment="create ecommerce microservice&#10; - handle eureka server&#10; - handle api-gateway&#10; - handle product-service">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/damine/productservice/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/damine/productservice/models/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,8 +122,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1691670538783</updated>
-      <workItem from="1691670539872" duration="8200000" />
+      <workItem from="1691670539872" duration="8654000" />
     </task>
+    <task id="LOCAL-00001" summary="create ecommerce microservice&#10; - handle eureka server&#10; - handle api-gateway&#10; - handle product-service">
+      <option name="closed" value="true" />
+      <created>1691680039874</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691680039874</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,5 +156,7 @@
       <path value="$PROJECT_DIR$/eureka-server" />
       <path value="$PROJECT_DIR$/api-gateway" />
     </ignored-roots>
+    <MESSAGE value="create ecommerce microservice&#10; - handle eureka server&#10; - handle api-gateway&#10; - handle product-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="create ecommerce microservice&#10; - handle eureka server&#10; - handle api-gateway&#10; - handle product-service" />
   </component>
 </project>

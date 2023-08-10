@@ -1,7 +1,6 @@
 package com.damine.productservice.models;
 
 import jakarta.persistence.Entity;
-;
 import lombok.*;
 
 
@@ -10,7 +9,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@EqualsAndHashCode (callSuper = true)
+@EqualsAndHashCode(callSuper = true)
 public class Product extends AbstractEntity<Long> {
 
     private String name;
