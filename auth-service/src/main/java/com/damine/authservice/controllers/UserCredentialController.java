@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserCredentialController {
     private final UserCredentialService userCredentialService;
 
-    @PostMapping
+    @PostMapping("register")
     public ResponseEntity<UserCredentialDto> save(@Valid @RequestBody UserCredentialRequestDto userCredentialDto) {
         return new ResponseEntity<>(userCredentialService.saveUser(userCredentialDto), HttpStatus.CREATED);
     }
