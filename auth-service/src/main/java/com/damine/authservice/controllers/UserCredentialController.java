@@ -1,7 +1,8 @@
 package com.damine.authservice.controllers;
 
 import com.damine.authservice.DTO.UserCredentialDto;
-import com.damine.authservice.DTO.UserCredentialRequestDto;
+import com.damine.authservice.http.request.AuthRequest;
+import com.damine.authservice.http.response.UserCredentialResponse;
 import com.damine.authservice.services.UserCredentialService;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
@@ -18,13 +19,13 @@ public class UserCredentialController {
     private final UserCredentialService userCredentialService;
 
     @PostMapping("register")
-    public ResponseEntity<UserCredentialDto> save(@Valid @RequestBody UserCredentialRequestDto userCredentialDto) {
+    public ResponseEntity<UserCredentialResponse> save(@Valid @RequestBody UserCredentialDto userCredentialDto) {
         return new ResponseEntity<>(userCredentialService.saveUser(userCredentialDto), HttpStatus.CREATED);
     }
 
-    @GetMapping("token")
-    public String getToken(UserCredentialDto userCredentialDto) {
-        return userCredentialService.generateToken(userCredentialDto.getName());
+    @PostMapping("token")
+    public String getToken(@Valid @RequestBody AuthRequest authRequest) {
+        return userCredentialService.generateToken(authRequest.getName());
     }
 
     @GetMapping("validate")

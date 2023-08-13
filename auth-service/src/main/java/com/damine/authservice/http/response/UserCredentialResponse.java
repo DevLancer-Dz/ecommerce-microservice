@@ -1,5 +1,6 @@
-package com.damine.authservice.DTO;
+package com.damine.authservice.http.response;
 
+import com.damine.authservice.DTO.AbstractDto;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
@@ -8,8 +9,7 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class UserCredentialDto extends AbstractDto<Long>{
+public class UserCredentialResponse extends AbstractDto<Long> {
     private String name;
     private String email;
-    private String password;
 }
