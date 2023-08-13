@@ -25,7 +25,7 @@ public class UserCredentialController {
 
     @PostMapping("token")
     public String getToken(@Valid @RequestBody AuthRequest authRequest) {
-        return userCredentialService.generateToken(authRequest.getName());
+        return userCredentialService.generateToken(authRequest);
     }
 
     @GetMapping("validate")
