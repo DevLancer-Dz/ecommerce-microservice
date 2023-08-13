@@ -1,5 +1,6 @@
 package com.damine.apigateway.filters;
 
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
@@ -10,6 +11,10 @@ import org.springframework.web.client.RestTemplate;
 
 @Component
 public class AuthenticationFilter extends AbstractGatewayFilterFactory<AuthenticationFilter.Config> {
+
+    private static final String BEARER_PREFIX = "Bearer ";
+    private static final String AUTH_SERVICE_URL = "http://localhost:8082/auth/validate?token=";
+
     @Autowired
     private RouteValidator routeValidator;
     @Autowired
@@ -26,13 +31,13 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
                 if (!exchange.getRequest().getHeaders().containsKey(HttpHeaders.AUTHORIZATION)) {
                     throw new RuntimeException("missing authorization header");
                 }
-                String authHeaders = exchange.getRequest().getHeaders().get(HttpHeaders.AUTHORIZATION).get(0);
-                if (authHeaders != null && authHeaders.startsWith("Bearer ")) {
-                    authHeaders = authHeaders.substring(7);
-                    System.out.println(authHeaders+"***********************************");
+                String authHeader = exchange.getRequest().getHeaders().getFirst(HttpHeaders.AUTHORIZATION);
+                if (authHeader == null || !authHeader.startsWith(BEARER_PREFIX)) {
+                    throw new RuntimeException("missing or invalid authorization header");
                 }
+                String authToken = authHeader.substring(BEARER_PREFIX.length());
                 try {
-                    restTemplate.getForObject("http://localhost:8082/auth/validate?token=" + authHeaders, String.class);
+                    restTemplate.getForObject(AUTH_SERVICE_URL + authToken, String.class);
                 } catch (Exception e) {
                     throw new RuntimeException("unauthorized access to application");
                 }
@@ -40,6 +45,7 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
             return chain.filter(exchange);
         }));
     }
+
     public static class Config {
     }
 }
